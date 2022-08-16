@@ -1,0 +1,20 @@
+{
+  "name": "my-redux",
+  "version": "1.0.0",
+  "description": "",
+  "main": "createStore.js",
+  "scripts": {
+    "start": "npx parcel index.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.7.6",
+    "eslint": "^8.22.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.4",
+    "eslint-plugin-promise": "^6.0.0",
+    "parcel": "^2.7.0"
+  }
+}
