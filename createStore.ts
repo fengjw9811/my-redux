@@ -1,4 +1,7 @@
-function createStore (reducer: (state: number, action: {type: string}) => number) {
+function createStore (reducer: (state: number, action: {type: string}) => number, enhancer?: Function) {
+  if(enhancer){
+    return enhancer(createStore)(reducer)
+  }
   let state = null as unknown as number
   const listeners = [] as Function[]
   function dispatch (action: {type: string}) {
